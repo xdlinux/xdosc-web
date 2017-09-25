@@ -15,10 +15,14 @@ body {
   background-color: #f5f5f5;
   text-align: center;
 }
-.row {
-  margin-bottom: 1.5rem;
+.section-title {
+  padding-bottom: 1.5rem;
+}
+.news .col-md-6 {
+  padding-bottom: 1.5rem;
 }
 .service .col-md-3 {
+  padding-bottom: 1.5rem;
   text-align: center;
 }
 .service h3 {
