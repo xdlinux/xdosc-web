@@ -74,9 +74,15 @@ layout: default
           <div class="event-title">
             <h3><a href="{{ event.url | relative_url }}">{{ event.title }}</a></h3>
           </div>
-          <div class="event-meta">
-            <span>时间：{{ event.date | date_to_string }} {% if event.time %} {{ event.time }} {% endif %}</span>
-            <span>地点：{{ event.location }}</span>
+          <div class="event-meta text-info">
+            <span class="event-time">
+              <span class="fa fa-clock-o" aria-hidden="true"></span>
+              {{ event.date | date_to_string }} {% if event.time %} {{ event.time }} {% endif %}
+            </span>
+            <span class="event-location">
+              <span class="fa fa-map-marker" aria-hidden="true"></span>
+              {{ event.location }}
+            </span>
           </div>
         </div>
       {% endfor %}
@@ -91,8 +97,15 @@ layout: default
           <div class="post-title">
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           </div>
-          <div class="post-meta">
-            {{ post.author }}, {{ post.date | date_to_string }}
+          <div class="post-meta text-muted">
+            <span class="post-author">
+              <span class="fa fa-pencil" aria-hidden="true"></span>
+              {{ post.author }}
+            </span>
+            <span class="post-date">
+              <span class="fa fa-calendar" aria-hidden="true"></span>
+              {{ post.date | date_to_string }}
+            </span>
           </div>
         </div>
       {% endfor %}
