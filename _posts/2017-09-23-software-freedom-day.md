@@ -37,7 +37,7 @@ deepin 的贴纸和钥匙环、openSUSE 的大蜥蜴贴纸、Mozilla 的 Firefox
 
 ![begin](/img/2017-sfd/begin.jpg)
 
-## 自由软件、开源软件 (by ckj)
+## 自由软件、开源软件
 
 首先是 ckj 带来的自由软件、开源软件的分享。（长达一个多小时，可以颁发一个最长演讲时间贡献奖，233）。
 
@@ -53,7 +53,7 @@ deepin 的贴纸和钥匙环、openSUSE 的大蜥蜴贴纸、Mozilla 的 Firefox
 第一次写游戏、第一次尝试GNU/Linux、第一次向开源项目提交patch、第一次搭建服务……  
 最后的提问互动吸引了大家踊跃回答，（都想要Firefox的狐狸公仔呀）。
 
-## 在SUSE的日子 (by river)
+## 在SUSE的实习经历
 
 ![SUSE intern](/img/2017-sfd/river-1.jpg)
 
@@ -64,7 +64,7 @@ deepin 的贴纸和钥匙环、openSUSE 的大蜥蜴贴纸、Mozilla 的 Firefox
 river讲了openSUSE的历史，还给我们分享他保研（膜river大哥）找导师的“辛酸”经历以及一些学习的经验。  
 演讲结束后的提问环节大家也是异常踊跃，我们向参与提问的同学赠送了小礼品——Firefox的折扇、鼠标垫、Deepin记事本等。
 
-## 无线安全 (by add)
+## 无线安全
 
 ![add-1](/img/2017-sfd/add-1.jpg)
 
@@ -80,7 +80,7 @@ river讲了openSUSE的历史，还给我们分享他保研（膜river大哥）�
 （吓得有同学当场表示以后再也不敢连公共WIFI了……呃，这个……）。。  
 同样的，提问环节自然也不能少。
 
-## CLI is Awesome! (by jestfy)
+## CLI is Awesome!
 
 ![jesty-1](/img/2017-sfd/jesty-1.jpg)
 
