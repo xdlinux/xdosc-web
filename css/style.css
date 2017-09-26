@@ -18,8 +18,17 @@ body {
 .section-title {
   padding-bottom: 1.5rem;
 }
+.news h4 {
+  font-size: 1rem;
+}
 .news .col-md-6 {
   padding-bottom: 1.5rem;
+}
+.event {
+  padding-bottom: 1rem;
+}
+.post {
+  padding-bottom: 1rem;
 }
 .service .col-md-3 {
   padding-bottom: 1.5rem;
