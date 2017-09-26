@@ -1,0 +1,26 @@
+---
+layout: default
+title: 活动 - 西电开源社区
+permalink: /event/
+---
+
+{% for event in site.categories['event'] limit:5 %}
+  <div class="event">
+    <div class="event-title">
+      <h1><a href="{{ event.url | relative_url }}">{{ event.title }}</a></h1>
+    </div>
+    <div class="event-meta text-info">
+      <span class="event-time">
+        <span class="fa fa-clock-o" aria-hidden="true"></span>
+        {{ event.date | date_to_string }} {% if event.time %} {{ event.time }} {% endif %}
+      </span>
+      <span class="event-location">
+        <span class="fa fa-map-marker" aria-hidden="true"></span>
+        {{ event.location }}
+      </span>
+    </div>
+    <div class="event-content">
+      {{ event.content }}
+    </div>
+  </div>
+{% endfor %}
