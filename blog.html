@@ -1,0 +1,23 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="news">
+  <div class="col-md-6">
+    {% for post in site.categories['blog'] %}
+      <div class="post">
+        <div class="post-title">
+          <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+        </div>
+        <div class="post-meta">
+          {{ post.author }}, {{ post.date | date_to_string }}
+        </div>
+        <div class="post-content">
+          {{ post.content }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
