@@ -9,9 +9,6 @@ body {
 img {
   max-width: 100%;
 }
-.navbar-brand {
-  margin-right: 2rem;
-}
 .footer {
   position: absolute;
   bottom: 0;
