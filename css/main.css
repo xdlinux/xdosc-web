@@ -33,6 +33,9 @@ img {
 article {
   padding: .5rem .75rem;
 }
+.meta-span {
+  padding: 0 .25rem;
+}
 .read-more {
   padding: .5rem .75rem;
 }

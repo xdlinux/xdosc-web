@@ -10,11 +10,17 @@ permalink: /event/
       <h1><a href="{{ event.url | relative_url }}">{{ event.title }}</a></h1>
     </div>
     <div class="event-meta text-info">
-      <span class="event-time">
-        <span class="fa fa-clock-o" aria-hidden="true"></span>
-        {{ event.date | date_to_string }} {% if event.time %} {{ event.time }} {% endif %}
+      <span class="event-date meta-span">
+        <span class="fa fa-calendar" aria-hidden="true"></span>
+        {{ event.date | date_to_string }}
       </span>
-      <span class="event-location">
+      {% if event.time %}
+        <span class="event-time meta-span">
+          <span class="fa fa-clock-o" aria-hidden="true"></span>
+          {{ event.time }}
+        </span>
+      {% endif %}
+      <span class="event-location meta-span">
         <span class="fa fa-map-marker" aria-hidden="true"></span>
         {{ event.location }}
       </span>
