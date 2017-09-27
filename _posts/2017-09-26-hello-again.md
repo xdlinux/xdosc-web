@@ -1,8 +1,8 @@
 ---
 layout: post
-title: hello, world
+title: hello (again)
 date: 2017-09-26
-author: CKJ
+author: ckj
 categories: blog
 ---
 ## misc
