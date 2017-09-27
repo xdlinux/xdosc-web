@@ -3,11 +3,14 @@ html {
   min-height: 100%;
 }
 body {
-  padding-top: 120px;
+  padding-top: 100px;
   padding-bottom: 60px;
 }
 img {
   max-width: 100%;
+}
+.navbar-brand {
+  margin-right: 2rem;
 }
 .footer {
   position: absolute;
@@ -19,26 +22,26 @@ img {
   text-align: center;
 }
 .section-title {
-  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .news h4 {
   font-size: 1rem;
 }
 .news .col-md-6 {
-  padding-bottom: 1.5rem;
+  padding: 1rem;
 }
-.event {
-  padding-bottom: 1rem;
+article {
+  padding: .5rem .75rem;
 }
-.post {
-  padding-bottom: 1rem;
+.read-more {
+  padding: .5rem .75rem;
 }
 .service .col-md-3 {
-  padding-bottom: 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
-.service h3 {
-  margin-top: .5rem;
+.service img {
+  margin: .5rem;
 }
 .service p {
   margin-right: .75rem;
