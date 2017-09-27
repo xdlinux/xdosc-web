@@ -1,0 +1,113 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+img {
+  max-width: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.section-title {
+  padding-bottom: 1.5rem;
+}
+.news h4 {
+  font-size: 1rem;
+}
+.news .col-md-6 {
+  padding-bottom: 1.5rem;
+}
+.event {
+  padding-bottom: 1rem;
+}
+.post {
+  padding-bottom: 1rem;
+}
+.service .col-md-3 {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.service h3 {
+  margin-top: .5rem;
+}
+.service p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.service img {
+  width: 100px;
+  height: 100px;
+}
+.service h3 {
+  font-size: 1rem;
+}
+.service p {
+  font-size: .8rem;
+}
+@media (min-width: 360px) {
+  .service img {
+    width: 110px;
+    height: 110px;
+  }
+  .service h3 {
+    font-size: 1.2rem;
+  }
+  .service p {
+    font-size: .9rem;
+  }
+}
+@media (min-width: 384px) {
+  .service img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (min-width: 415px) {
+  .service img {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (min-width: 576px) {
+  .service img {
+    width: 140px;
+    height: 140px;
+  }
+  .service h3 {
+    font-size: 1.4rem;
+  }
+  .service p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .service img {
+    width: 130px;
+    height: 130px;
+  }
+  .service p {
+    font-size: .9rem;
+  }
+}
+@media (min-width: 992px) {
+  .service img {
+    width: 140px;
+    height: 140px;
+  }
+  .service h3 {
+    font-size: 1.6rem;
+  }
+  .service p {
+    font-size: 1rem;
+  }
+}
