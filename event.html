@@ -13,17 +13,17 @@ permalink: /event/
         </div>
         <div class="event-meta text-info">
           <span class="event-date meta-span">
-            <span class="fa fa-calendar" aria-hidden="true"></span>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
             {{ event.date | date_to_string }}
           </span>
           {% if event.time %}
             <span class="event-time meta-span">
-              <span class="fa fa-clock-o" aria-hidden="true"></span>
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
               {{ event.time }}
             </span>
           {% endif %}
           <span class="event-location meta-span">
-            <span class="fa fa-map-marker" aria-hidden="true"></span>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
             {{ event.location }}
           </span>
         </div>
@@ -34,7 +34,7 @@ permalink: /event/
     {% endfor %}
   </div>
   <div class="col-12 col-md-3 side-menu">
-    <ul>
+    <ul class="list-unstyled">
       {% for event in site.categories['event'] %}
         <li><a href="{{ "#" | append: event.url }}">{{ event.title }}</a></li>
       {% endfor %}
