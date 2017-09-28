@@ -2,10 +2,10 @@
 layout: default
 ---
 <article>
-  <div class="post-title">
-    <h3><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h3>
+  <div class="post-title text-center">
+    <h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1>
   </div>
-  <div class="post-meta text-muted">
+  <div class="post-meta text-center text-muted">
     <span class="post-date">
       <i class="fa fa-calendar" aria-hidden="true"></i>
       {{ page.date | date_to_string }}

@@ -19,29 +19,30 @@ body {
   margin: .5rem 0;
 }
 .section-title {
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-.news h4 {
-  font-size: 1rem;
+.service .row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
-.news .col-md-6 {
-  padding: 1rem;
-}
-article {
-  padding: .5rem .75rem;
+.news .row {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 article img {
   max-width: 100%;
 }
+.card {
+  margin: 1.5rem .75rem;
+  padding: .5rem .75rem;
+}
 .post-meta span {
   padding: 0 .25rem;
 }
-.read-more {
-  padding: .5rem .75rem;
-}
-.service .col-md-3 {
-  padding: 1rem;
+.news .post {
   text-align: center;
+  padding: 0 .75rem;
 }
 .service img {
   margin: .5rem;
@@ -60,7 +61,16 @@ article img {
 .service p {
   font-size: .8rem;
 }
+.news h3 {
+  font-size: 1.3rem;
+}
+.news p {
+  font-size: 1rem;
+}
 @media (min-width: 360px) {
+  .section-title {
+    font-size: 2rem;
+  }
   .service img {
     width: 110px;
     height: 110px;
@@ -70,6 +80,9 @@ article img {
   }
   .service p {
     font-size: .9rem;
+  }
+  .news h3 {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 384px) {
@@ -95,6 +108,9 @@ article img {
   .service p {
     font-size: 1rem;
   }
+  .news .post {
+    text-align: left;
+  }
 }
 @media (min-width: 768px) {
   .service img {
@@ -103,6 +119,9 @@ article img {
   }
   .service p {
     font-size: .9rem;
+  }
+  .news h3 {
+    font-size: 1.75rem;
   }
 }
 @media (min-width: 992px) {

@@ -6,37 +6,37 @@ permalink: /event/
 
 <div class="row">
   <div class="col-12 col-md-9">
-    {% for event in site.categories['event'] %}
-      <article id="{{ event.url }}">
-        <div class="event-title">
-          <h1><a href="{{ event.url | relative_url }}">{{ event.title }}</a></h1>
+    {% for post in site.categories['event'] %}
+      <article id="{{ post.url }}" class="card">
+        <div class="post-title">
+          <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
         </div>
-        <div class="event-meta text-info">
-          <span class="event-date meta-span">
+        <div class="post-meta text-info">
+          <span class="post-date meta-span">
             <i class="fa fa-calendar" aria-hidden="true"></i>
-            {{ event.date | date_to_string }}
+            {{ post.date | date_to_string }}
           </span>
-          {% if event.time %}
-            <span class="event-time meta-span">
+          {% if post.time %}
+            <span class="post-time meta-span">
               <i class="fa fa-clock-o" aria-hidden="true"></i>
-              {{ event.time }}
+              {{ post.time }}
             </span>
           {% endif %}
-          <span class="event-location meta-span">
+          <span class="post-location meta-span">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
-            {{ event.location }}
+            {{ post.location }}
           </span>
         </div>
-        <div class="event-content">
-          {{ event.content }}
+        <div class="post-content">
+          {{ post.content }}
         </div>
       </article>
     {% endfor %}
   </div>
   <div class="col-12 col-md-3 side-menu">
     <ul class="list-unstyled">
-      {% for event in site.categories['event'] %}
-        <li><a href="{{ "#" | append: event.url }}">{{ event.title }}</a></li>
+      {% for post in site.categories['event'] %}
+        <li><a href="{{ "#" | append: post.url }}">{{ post.title }}</a></li>
       {% endfor %}
     </ul>
   </div>
