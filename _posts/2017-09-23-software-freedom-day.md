@@ -4,6 +4,7 @@ title: 2017 软件自由日西电站
 date: 2017-09-23
 time: 9:30-12:00
 location: B-303
+author: anonymous
 categories: event
 ---
 
@@ -98,5 +99,7 @@ river讲了openSUSE的历史，还给我们分享他保研（膜river大哥）�
 
 ![all-2](/img/2017-sfd/all-2.jpg)
 
-本次SFD圆满结束。再次感谢来自Mozilla，deepin，SUSE的支持。  
-另外特别感谢西电电子工程学院李隐峰老师对我们的帮助。
+至此，本次SFD 活动圆满结束。  
+感谢各位到场的嘉宾，感谢各位听众！  
+感谢Mozilla，deepin，SUSE的支持。  
+特别感谢西电电子工程学院李隐峰老师对我们的帮助。
