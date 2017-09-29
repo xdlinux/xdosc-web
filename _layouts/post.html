@@ -1,35 +1,39 @@
 ---
 layout: default
 ---
-<article>
-  <div class="post-title text-center">
-    <h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1>
-  </div>
-  <div class="post-meta text-center text-muted">
-    <span class="post-date">
-      <i class="fa fa-calendar" aria-hidden="true"></i>
-      {{ page.date | date_to_string }}
-    </span>
-    {% if page.time %}
-      <span class="post-time">
-        <i class="fa fa-clock-o" aria-hidden="true"></i>
-        {{ page.time }}
-      </span>
-    {% endif %}
-    {% if page.author %}
-      <span class="post-author">
-        <i class="fa fa-pencil" aria-hidden="true"></i>
-        {{ page.author }}
-      </span>
-    {% endif %}
-    {% if page.location %}
-      <span class="post-location">
-        <i class="fa fa-map-marker" aria-hidden="true"></i>
-        {{ page.location }}
-      </span>
-    {% endif %}
-  </div>
-  <div class="post-content">
-    {{ content }}
+<article class="card border-light">
+  <div class="card-body">
+    <div class="card-title post-title text-center">
+      <h1><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h1>
+    </div>
+    <div class="card-text">
+      <div class="post-meta text-center text-muted">
+        {% if page.author %}
+        <span class="text-nowrap">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          {{ page.author }}
+        </span>
+        {% endif %}
+        {% if page.location %}
+        <span class="text-nowrap">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          {{ page.location }}
+        </span>
+        {% endif %}
+        <span class="text-nowrap">
+          <i class="fa fa-calendar" aria-hidden="true"></i>
+          {{ page.date | date_to_string }}
+        </span>
+        {% if page.time %}
+        <span class="text-nowrap">
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+          {{ page.time }}
+        </span>
+        {% endif %}
+      </div>
+      <div class="post-content">
+        {{ content }}
+      </div>
+    </div>
   </div>
 </article>

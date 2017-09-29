@@ -7,31 +7,44 @@ permalink: /blog/
 <div class="row">
   <div class="col-12 col-md-9">
     {% for post in site.categories['blog'] %}
-      <article id="{{ post.url }}" class="card">
-        <div class="post-title">
+    <article id="{{ post.url }}" class="card border-light">
+      <div class="card-body">
+        <div class="card-title">
           <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
         </div>
-        <div class="post-meta text-muted">
-          <span class="post-author meta-span">
-            <i class="fa fa-pencil" aria-hidden="true"></i>
-            {{ post.author }}
-          </span>
-          <span class="post-date meta-span">
-            <i class="fa fa-calendar" aria-hidden="true"></i>
-            {{ post.date | date_to_string }}
-          </span>
+        <div class="card-text">
+          <div class="post-meta text-muted">
+            <span class="text-nowrap">
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+              {{ post.author }}
+            </span>
+            <span class="text-nowrap">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              {{ post.date | date_to_string }}
+            </span>
+          </div>
+          <div class="post-content">
+            {{ post.content }}
+          </div>
         </div>
-        <div class="post-content">
-          {{ post.content }}
-        </div>
-      </article>
+      </div>
+    </article>
     {% endfor %}
   </div>
-  <div class="col-12 col-md-3 side-menu">
-    <ul class="list-unstyled">
-      {% for post in site.categories['blog'] %}
-        <li><a href="{{ "#" | append: post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
+  <div class="col-12 col-md-3">
+    <div class="card border-light">
+      <div class="card-body">
+        <div class="card-title">
+          <h2># 文章</h2>
+        </div>
+        <div class="card-text">
+          <ul class="list-group">
+            {% for post in site.categories['blog'] %}
+            <a href="{{ "#" | append: post.url }}" class="list-group-item list-group-item-action list-group-item-info text-center">{{ post.title }}</a>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
