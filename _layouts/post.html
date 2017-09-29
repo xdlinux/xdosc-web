@@ -8,12 +8,6 @@ layout: default
     </div>
     <div class="card-text">
       <div class="post-meta text-center text-muted">
-        {% if page.author %}
-        <span class="text-nowrap">
-          <i class="fa fa-pencil" aria-hidden="true"></i>
-          {{ page.author }}
-        </span>
-        {% endif %}
         {% if page.location %}
         <span class="text-nowrap">
           <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -28,6 +22,12 @@ layout: default
         <span class="text-nowrap">
           <i class="fa fa-clock-o" aria-hidden="true"></i>
           {{ page.time }}
+        </span>
+        {% endif %}
+        {% if page.author %}
+        <span class="text-nowrap">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          {{ page.author }}
         </span>
         {% endif %}
       </div>
