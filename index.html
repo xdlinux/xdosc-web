@@ -65,7 +65,7 @@ layout: default
           <div class="card-text">
             <ul class="list-group">
               {% for post in site.categories['event'] limit:5 %}
-              <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action list-group-item-primary flex-column align-items-start text-center">
+              <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action flex-column align-items-start text-center">
                 <h4 class="mb-1">{{ post.title }}</h4>
                 <small class="post-meta">
                   <span class="text-nowrap"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ post.location }}</span>
@@ -91,7 +91,7 @@ layout: default
           <div class="card-text">
             <ul class="list-group">
               {% for post in site.categories['blog'] limit:5 %}
-              <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action list-group-item-secondary flex-column align-items-start text-center">
+              <a href="{{ post.url | relative_url }}" class="list-group-item list-group-item-action flex-column align-items-start text-center">
                 <h4 class="mb-1">{{ post.title }}</h4>
                 <small class="post-meta">
                   <span class="text-nowrap"><i class="fa fa-pencil" aria-hidden="true"></i> {{ post.author }}</span>
