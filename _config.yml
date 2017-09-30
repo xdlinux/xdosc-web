@@ -3,9 +3,9 @@ title: 西电开源社区
 copyleft: 2008-2017 ❤ XDOSC
 description: 西电开源社区由西电校内一群不仅玩 GNU/Linux 的学生组成，
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://xdlinux.info" # the base hostname & protocol for your site
+url: "https://linux.xidian.edu.cn" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: ":categories/:year-:month-:day-:title.html"
+permalink: "/:categories/:year-:month-:day-:title.html"
