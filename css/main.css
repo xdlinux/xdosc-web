@@ -6,6 +6,12 @@ body {
   padding-top: 100px;
   padding-bottom: 60px;
 }
+.header {
+  height: 60px;
+}
+.header img {
+  height: 32px;
+}
 .footer {
   position: absolute;
   bottom: 0;
@@ -24,6 +30,9 @@ article img {
 .post-meta span {
   margin-left: .25rem;
   margin-right: .25rem;
+}
+#status-table span {
+  margin-left: .25rem;
 }
 .service img {
   margin: .5rem;

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+
+{% include head.html %}
+
+<body style="padding-top: 60px">
+
+  {% include header.html %}
+
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">西电开源软件镜像站</h1>
+      <h2>powered by <u>Xidian Open Source Community</u>.</h2>
+    </div>
+  </div>
+
+  <div class="container">
+    {{ content }}
+  </div>
+
+  {% include footer.html %}
+
+  <script src="{{ "/js/loadstatus.js" | prepend: site.baseurl }}"></script>
+
+</body>
+
+</html>

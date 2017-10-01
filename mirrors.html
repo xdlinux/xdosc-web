@@ -1,0 +1,77 @@
+---
+layout: mirrors
+title: Mirrors
+permalink: /mirrors/
+excerpt: 西电开源软件镜像站是西电开源社区维护的校内镜像站。
+---
+<div class="row">
+  <div class="col-12 col-md-8">
+    <div class="card border-light">
+      <div class="card-body">
+        <div class="card-title">
+          <h2># 同步状态</h2>
+        </div>
+        <div class="card-text">
+          <table id="status-table" class="table table-hover">
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-md-4">
+    <div class="card border-light">
+      <div class="card-body">
+        <div class="card-title">
+          <h2># 新闻</h2>
+        </div>
+        <div class="card-text">
+          <ul class="list-group">
+            {% for post in site.categories['news'] limit:5 %}
+            <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action list-group-item-primary flex-column align-items-start text-center">
+              <h5 class="mb-1">{{ post.title }}</h5>
+              <small class="post-meta">
+                <span class="text-nowrap"><i class="fa fa-pencil" aria-hidden="true"></i> {{ post.author }}</span>
+                <span class="text-nowrap"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
+              </small>
+            </a>
+            {% endfor %}
+          </ul>
+        </div>
+        <h6><a href="{{ "/news/" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多新闻</a></h6>
+      </div>
+    </div>
+    <div class="card border-light">
+      <div class="card-body">
+        <div class="card-title">
+          <h2># 报告</h2>
+        </div>
+        <div class="card-text">
+          <ul class="list-group">
+            {% for post in site.categories['report'] limit:5 %}
+            <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action list-group-item-secondary flex-column align-items-start text-center">
+              <h5 class="mb-1">{{ post.title }}</h5>
+              <small class="post-meta">
+                <span class="text-nowrap"><i class="fa fa-pencil" aria-hidden="true"></i> {{ post.author }}</span>
+                <span class="text-nowrap"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
+              </small>
+            </a>
+            {% endfor %}
+          </ul>
+        </div>
+        <h6><a href="{{ "/report/" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多报告</a></h6>
+      </div>
+    </div>
+    <div class="card border-light">
+      <div class="card-body">
+        <div class="card-title">
+          <h2># 常用链接</h2>
+        </div>
+        <div class="card-text">
+          <ul class="list-group">
+            <a href="{{ "/mirrors/iso/" | prepend: site.url }}" class="list-group-item list-group-item-action list-group-item-info flex-column align-items-start text-center">获取安装镜像</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
