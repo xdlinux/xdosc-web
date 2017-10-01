@@ -103,3 +103,7 @@ river讲了openSUSE的历史，还给我们分享他保研（膜river大哥）�
 感谢各位到场的嘉宾，感谢各位听众！  
 感谢Mozilla，deepin，SUSE的支持。  
 特别感谢西电电子工程学院李隐峰老师对我们的帮助。
+
+## 附件
+
+1. [ckj 的 slides](/misc/2017-sfd-ckj.pdf)
