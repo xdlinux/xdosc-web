@@ -10,7 +10,7 @@ permalink: /event/
     <article id="{{ post.url }}" class="card border-light">
       <div class="card-body">
         <div class="card-title">
-          <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+          <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
         </div>
         <div class="card-text">
           <div class="post-meta text-info">
