@@ -6,10 +6,7 @@ body {
   padding-top: 100px;
   padding-bottom: 60px;
 }
-.header {
-  height: 60px;
-}
-.header img {
+.navbar-brand img {
   height: 32px;
 }
 .footer {
