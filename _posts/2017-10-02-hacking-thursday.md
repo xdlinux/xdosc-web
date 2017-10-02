@@ -3,7 +3,7 @@ layout: post
 title: XDLinux 每周小聚
 date: 2017-10-02
 time: 15:30-18:00
-location: undef
+location: E-III-309
 author: ckj
 categories: event
 ---
