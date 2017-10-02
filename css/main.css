@@ -24,6 +24,9 @@ body {
 article img {
   max-width: 100%;
 }
+article .post-meta {
+  margin-bottom: .5rem;
+}
 .post-meta span {
   margin-left: .25rem;
   margin-right: .25rem;
