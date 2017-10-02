@@ -7,6 +7,8 @@ location: undef
 author: ckj
 categories: event
 ---
+![Hacking Thursday](/img/h4/h4.png)
+
 ## Topic
 
 * XDLinux 网站域名变更 —— 聊聊我们的网站是如何工作的
