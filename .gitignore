@@ -3,3 +3,10 @@ _site/
 .sass-cache/
 .jekyll-metadata
 
+# ---> seperate posts repo
+_posts/
+misc/
+picture/
+
+# ---> status.json
+mirrors/status.json
