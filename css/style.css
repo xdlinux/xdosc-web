@@ -1,3 +1,8 @@
+article .post-meta { margin-bottom: 1rem; }
+.post-content img { max-width: 100% }
+.post-title h1 { font-size: 3rem }
+.post-content h1, .post-content h2, .post-content h3 { margin-top: 1rem; margin-bottom: .75rem }
+.post-content h4, .post-content h5, .post-content h6 { margin-top: .75rem; margin-bottom: .5rem }
 .post-content table { border-collapse: collapse; width: 100%; margin: 1rem 0 }
 .post-content thead { background: #abdde5 }
 .post-content thead tr th { font-weight: bold }
