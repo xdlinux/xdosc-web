@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-12 col-md-9">
+    {% for post in site.categories[page.category] %}
+    <article id="{{ post.url }}" class="card border-light">
+      <div class="card-body">
+        <div class="card-title">
+          <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+        </div>
+        <div class="card-text">
+          <div class="post-meta text-muted">
+            {% if post.location %}
+            <span class="text-nowrap">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              {{ post.location }}
+            </span>
+            {% endif %}
+            {% if post.date %}
+            <span class="text-nowrap">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              {{ post.date | date_to_string }}
+            </span>
+            {% endif %}
+            {% if post.time %}
+            <span class="text-nowrap">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              {{ post.time }}
+            </span>
+            {% endif %}
+            {% if post.author %}
+            <span class="text-nowrap">
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+              {{ post.author }}
+            </span>
+            {% endif %}
+          </div>
+          <div class="post-content">
+            {{ post.content }}
+          </div>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+  <div class="col-12 col-md-3">
+    <div class="card border-light">
+      <div class="card-body">
+        <div class="card-title">
+          <h2># {{ page.title }}</h2>
+        </div>
+        <div class="card-text">
+          <ul class="list-group">
+            {% for post in site.categories[page.category] %}
+            <a href="{{ "#" | append: post.url }}" class="list-group-item list-group-item-action list-group-item-info text-center">{{ post.title }}</a>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

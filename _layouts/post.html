@@ -14,10 +14,12 @@ layout: default
           {{ page.location }}
         </span>
         {% endif %}
+        {% if page.date %}
         <span class="text-nowrap">
           <i class="fa fa-calendar" aria-hidden="true"></i>
           {{ page.date | date_to_string }}
         </span>
+        {% endif %}
         {% if page.time %}
         <span class="text-nowrap">
           <i class="fa fa-clock-o" aria-hidden="true"></i>
