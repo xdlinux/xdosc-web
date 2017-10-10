@@ -73,7 +73,16 @@
   font-weight: bold;
   font-style: italic;
 }
+@font-face {
+  font-family: "Orbitron";
+  src: url('../fonts/Orbitron/orbitron-medium-webfont.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 /* style */
+.top-navbar {
+  font-family: "Orbitron", "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", sans-serif;
+}
 .post-title, .post-meta, .post-content {
   font-family: "Noto Sans", "Noto Sans CJK SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", "WenQuanYi Zen Hei", sans-serif;
 }
