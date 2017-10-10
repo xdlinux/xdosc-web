@@ -22,11 +22,11 @@ excerpt: 西电开源软件镜像站是西电开源社区维护的校内镜像�
     <div class="card border-light">
       <div class="card-body">
         <div class="card-title">
-          <h2># 新闻</h2>
+          <h2># 公告</h2>
         </div>
         <div class="card-text">
           <ul class="list-group">
-            {% for post in site.categories['news'] limit:5 %}
+            {% for post in site.categories['announcements'] limit:5 %}
             <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action list-group-item-primary flex-column align-items-start text-center">
               <h5 class="mb-1">{{ post.title }}</h5>
               <small class="post-meta">
@@ -37,7 +37,7 @@ excerpt: 西电开源软件镜像站是西电开源社区维护的校内镜像�
             {% endfor %}
           </ul>
         </div>
-        <a href="{{ "/news/" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多新闻</a>
+        <a href="{{ "/announcements/" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多新闻</a>
       </div>
     </div>
     <div class="card border-light">
@@ -47,7 +47,7 @@ excerpt: 西电开源软件镜像站是西电开源社区维护的校内镜像�
         </div>
         <div class="card-text">
           <ul class="list-group">
-            {% for post in site.categories['report'] limit:5 %}
+            {% for post in site.categories['reports'] limit:5 %}
             <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action list-group-item-secondary flex-column align-items-start text-center">
               <h5 class="mb-1">{{ post.title }}</h5>
               <small class="post-meta">
@@ -58,7 +58,7 @@ excerpt: 西电开源软件镜像站是西电开源社区维护的校内镜像�
             {% endfor %}
           </ul>
         </div>
-        <a href="{{ "/report/" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多报告</a>
+        <a href="{{ "/reports/" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多报告</a>
       </div>
     </div>
     <div class="card border-light">
