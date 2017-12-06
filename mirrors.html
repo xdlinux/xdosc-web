@@ -57,27 +57,6 @@ excerpt: 西电开源软件镜像站是西电开源社区维护的校内镜像�
     <div class="card border-light">
       <div class="card-body">
         <div class="card-title">
-          <h2># 报告</h2>
-        </div>
-        <div class="card-text">
-          <ul class="list-group">
-            {% for post in site.categories['reports'] limit:5 %}
-            <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action list-group-item-secondary flex-column align-items-start text-center">
-              <h5 class="mb-1">{{ post.title }}</h5>
-              <small class="post-meta">
-                <span class="text-nowrap"><i class="fa fa-pencil" aria-hidden="true"></i> {{ post.author }}</span>
-                <span class="text-nowrap"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
-              </small>
-            </a>
-            {% endfor %}
-          </ul>
-        </div>
-        <a href="{{ "/reports/" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多报告</a>
-      </div>
-    </div>
-    <div class="card border-light">
-      <div class="card-body">
-        <div class="card-title">
           <h2># 常用链接</h2>
         </div>
         <div class="card-text">
@@ -116,6 +95,27 @@ excerpt: 西电开源软件镜像站是西电开源社区维护的校内镜像�
             </a>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="card border-light">
+      <div class="card-body">
+        <div class="card-title">
+          <h2># 报告</h2>
+        </div>
+        <div class="card-text">
+          <ul class="list-group">
+            {% for post in site.categories['reports'] limit:5 %}
+            <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action list-group-item-secondary flex-column align-items-start text-center">
+              <h5 class="mb-1">{{ post.title }}</h5>
+              <small class="post-meta">
+                <span class="text-nowrap"><i class="fa fa-pencil" aria-hidden="true"></i> {{ post.author }}</span>
+                <span class="text-nowrap"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
+              </small>
+            </a>
+            {% endfor %}
+          </ul>
+        </div>
+        <a href="{{ "/reports/" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多报告</a>
       </div>
     </div>
   </div>
