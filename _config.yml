@@ -1,6 +1,6 @@
 # Site settings
 title: 西电开源社区
-copyleft: 2008-2017 ❤ XDOSC
+copyleft: 2008-2018 ❤ XDOSC
 description: 西电开源社区由西电校内一群不仅玩 GNU/Linux 的学生组成，
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://linux.xidian.edu.cn" # the base hostname & protocol for your site
