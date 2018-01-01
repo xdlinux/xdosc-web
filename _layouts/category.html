@@ -13,25 +13,25 @@ layout: default
           <div class="post-meta text-muted">
             {% if post.location %}
             <span class="text-nowrap">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
               {{ post.location }}
             </span>
             {% endif %}
             {% if post.date %}
             <span class="text-nowrap">
-              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <i class="far fa-calendar-alt" aria-hidden="true"></i>
               {{ post.date | date_to_string }}
             </span>
             {% endif %}
             {% if post.time %}
             <span class="text-nowrap">
-              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              <i class="far fa-clock" aria-hidden="true"></i>
               {{ post.time }}
             </span>
             {% endif %}
             {% if post.author %}
             <span class="text-nowrap">
-              <i class="fa fa-pencil" aria-hidden="true"></i>
+              <i class="fas fa-pencil-alt" aria-hidden="true"></i>
               {{ post.author }}
             </span>
             {% endif %}

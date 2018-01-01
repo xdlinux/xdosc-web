@@ -12,28 +12,28 @@ layout: default
           <a href="https://linux.xidian.edu.cn/mirrors">
             <img class="rounded-circle" src="{{ "/img/server.svg" | prepend: site.baseurl }}" alt="Mirrors">
           </a>
-          <h4>开源镜像 <a href="https://linux.xidian.edu.cn/mirrors"><i class="fa fa-hand-o-right"></i></a></h4>
+          <h4>开源镜像 <a href="https://linux.xidian.edu.cn/mirrors"><i class="far fa-hand-point-right"></i></a></h4>
           <h6>多快好省</h6>
         </div>
         <div class="col-md-3 col-6 text-center">
           <a href="https://linux.xidian.edu.cn/forum">
             <img class="rounded-circle" src="{{ "/img/forum.svg" | prepend: site.baseurl }}" alt="Forum">
           </a>
-          <h4>论坛 <a href="https://linux.xidian.edu.cn/forum"><i class="fa fa-hand-o-right"></i></a></h4>
+          <h4>论坛 <a href="https://linux.xidian.edu.cn/forum"><i class="far fa-hand-point-right"></i></a></h4>
           <h6>参与讨论</h6>
         </div>
         <div class="col-md-3 col-6 text-center">
           <a href="https://linux.xidian.edu.cn/wiki">
             <img class="rounded-circle" src="{{ "/img/wiki.svg" | prepend: site.baseurl }}" alt="Wiki">
           </a>
-          <h4>Wiki <a href="https://linux.xidian.edu.cn/wiki"><i class="fa fa-hand-o-right"></i></a></h4>
+          <h4>Wiki <a href="https://linux.xidian.edu.cn/wiki"><i class="far fa-hand-point-right"></i></a></h4>
           <h6>积累的力量</h6>
         </div>
         <div class="col-md-3 col-6 text-center">
           <a href="https://linux.xidian.edu.cn/git">
             <img class="rounded-circle" src="{{ "/img/git.svg" | prepend: site.baseurl }}" alt="Git">
           </a>
-          <h4>代码托管 <a href="https://linux.xidian.edu.cn/git"><i class="fa fa-hand-o-right"></i></a></h4>
+          <h4>代码托管 <a href="https://linux.xidian.edu.cn/git"><i class="far fa-hand-point-right"></i></a></h4>
           <h6>源力与你同在</h6>
         </div>
       </div>
@@ -42,28 +42,28 @@ layout: default
           <a href="https://groups.google.com/forum/#!forum/xidian_linux">
             <img class="rounded-circle" src="{{ "/img/mail.svg" | prepend: site.baseurl }}" alt="Mailing List">
           </a>
-          <h4>邮件列表 <a href="https://groups.google.com/forum/#!forum/xidian_linux"><i class="fa fa-hand-o-right"></i></a></h4>
+          <h4>邮件列表 <a href="https://groups.google.com/forum/#!forum/xidian_linux"><i class="far fa-hand-point-right"></i></a></h4>
           <h6>关注最新动态</h6>
         </div>
         <div class="col-md-3 col-6 text-center">
           <a href="https://t.me/xdosc">
             <img class="rounded-circle" src="{{ "/img/telegram.svg" | prepend: site.baseurl }}" alt="News">
           </a>
-          <h4>Telegram <a href="https://t.me/xdosc"><i class="fa fa-hand-o-right"></i></a></h4>
+          <h4>Telegram <a href="https://t.me/xdosc"><i class="far fa-hand-point-right"></i></a></h4>
           <h6>实时聊天</h6>
         </div>
         <div class="col-md-3 col-6 text-center">
           <a href="https://linux.xidian.edu.cn/git/xdlinux/issues">
             <img class="rounded-circle" src="{{ "/img/issues.svg" | prepend: site.baseurl }}" alt="Issue">
           </a>
-          <h4>Issues <a href="https://linux.xidian.edu.cn/git/xdlinux/issues"><i class="fa fa-hand-o-right"></i></a></h4>
+          <h4>Issues <a href="https://linux.xidian.edu.cn/git/xdlinux/issues"><i class="far fa-hand-point-right"></i></a></h4>
           <h6>Bug 提交 / 意见反馈</h6>
         </div>
         <div class="col-md-3 col-6 text-center">
           <a href="https://linux.xidian.edu.cn/static/xdlinux.html">
             <img class="rounded-circle" src="{{ "/img/rocket.svg" | prepend: site.baseurl }}" alt="Join">
           </a>
-          <h4>纳新报名 <a href="https://linux.xidian.edu.cn/static/xdlinux.html"><i class="fa fa-hand-o-right"></i></a></h4>
+          <h4>纳新报名 <a href="https://linux.xidian.edu.cn/static/xdlinux.html"><i class="far fa-hand-point-right"></i></a></h4>
           <h6>加入我们</h6>
         </div>
       </div>
@@ -84,16 +84,16 @@ layout: default
               <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action flex-column align-items-start text-center border-0">
                 <h4 class="mb-1">{{ post.title }}</h4>
                 <small class="post-meta">
-                  <span class="text-nowrap"><i class="fa fa-map-marker" aria-hidden="true"></i> {{ post.location }}</span>
-                  <span class="text-nowrap"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
+                  <span class="text-nowrap"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ post.location }}</span>
+                  <span class="text-nowrap"><i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
                   {% if post.time %}
-                  <span class="text-nowrap"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ post.time }}</span>
+                  <span class="text-nowrap"><i class="far fa-clock" aria-hidden="true"></i> {{ post.time }}</span>
                   {% endif %}
                 </small>
               </a>
               {% endfor %}
             </ul>
-            <a href="{{ "/events" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多活动</a>
+            <a href="{{ "/events" | prepend: site.baseurl }}" class="card-link"><i class="far fa-hand-point-right"></i> 更多活动</a>
           </div>
         </div>
       </div>
@@ -110,13 +110,13 @@ layout: default
               <a href="{{ post.url | prepend: site.baseurl }}" class="list-group-item list-group-item-action flex-column align-items-start text-center border-0">
                 <h4 class="mb-1">{{ post.title }}</h4>
                 <small class="post-meta">
-                  <span class="text-nowrap"><i class="fa fa-pencil" aria-hidden="true"></i> {{ post.author }}</span>
-                  <span class="text-nowrap"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
+                  <span class="text-nowrap"><i class="fas fa-pencil-alt" aria-hidden="true"></i> {{ post.author }}</span>
+                  <span class="text-nowrap"><i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
                 </small>
               </a>
               {% endfor %}
             </ul>
-            <a href="{{ "/news" | prepend: site.baseurl }}" class="card-link"><i class="fa fa-hand-o-right"></i> 更多新闻</a>
+            <a href="{{ "/news" | prepend: site.baseurl }}" class="card-link"><i class="far fa-hand-point-right"></i> 更多新闻</a>
           </div>
         </div>
       </div>
