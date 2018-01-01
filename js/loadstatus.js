@@ -28,7 +28,7 @@ $(document).ready(function(){
 				}
 			}
 			var mirrorLink = "<a href=\"https://linux.xidian.edu.cn/mirrors/" + name + "/\" class=\"text-dark\">" + name + "</a>";
-			var helpIcon = "<a href=\"https://linux.xidian.edu.cn/wiki/mirror-help/" + name + "\" class=\"text-primary\"><span class=\"fa fa-info-circle\" aria-hidden=\"true\"></span></a>";
+			var helpIcon = "<a href=\"https://linux.xidian.edu.cn/wiki/mirror-help/" + name + "\" class=\"text-primary\"><span class=\"fas fa-question-circle\" aria-hidden=\"true\"></span></a>";
 			$("#status-table").append(
 				"<tr class=\"row " + trClass + "\">"
 				+ "<td class=\"col-8\">" + mirrorLink + helpIcon + "</td>"
